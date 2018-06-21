@@ -1,0 +1,63 @@
+ * {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation */
+
+.navbar {
+    width: 80%;
+    margin: 0 auto;
+}
+
+ul.navbar-nav {
+   margin-right: 10px;
+}
+
+hr {
+    width: 80%;
+    margin: auto;
+}
+
+#second-line {
+    width: 45%;
+    margin: auto;
+}
+
+
+.card-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/*  MODAL  */
+
+.modal-header {
+    background: #F0F8FF;
+    border-bottom: 1px solid black;
+}
+
+
+.modal-title {
+    margin-left: 1rem;
+}
+
+.modal-details {
+    margin-top: 1rem;
+    padding: 2px 2px 2px 0;
+}
+
+.modal-text {
+    margin-top: 1rem;
+}
+
+
+.fa-shopping-cart {
+    margin-right: 5px;
+}
+
+.modal-footer {
+    background: #F0F8FF;
+}
