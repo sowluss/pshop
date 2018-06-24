@@ -1,0 +1,57 @@
+<div class="modal fade details-3" id="details-3" tabindex="-1" role="dialog" aria-laballedby="details-3" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title text-center">Polo Shirt</h4>
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+           <span aria-hidden="true">&times;</span>
+           </button>
+
+            </div>
+
+
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="center-block">
+                                <img src="img/stock/png/shirt.png" alt="polo-shirt" class="details img-responsive">
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <h5 class="modal-details">Details</h5>
+                            <p class="modal-text">Light and comfortable, perfect for summer. Buy while they last.</p>
+                            <p>Price: &#8364; 29.99</p>
+                            <p>Brand: P & S</p>
+
+                            <form action="add_cart.php" method="post">
+                                <div class="form-group">
+                                    <div class="col-xs-3">
+                                        <br>
+                                        <label for="quantity" id="quantity-label">Quantity:</label>
+                                        <input type="text" class="form-control" id="quantity" name="quantity">
+                                    </div>
+                                    <br>
+                                    <div class="form-group">
+                                        <label for="sizes">Size:</label>
+                                        <select name="size" id="size" class="form-control">
+  <option value=""></option>
+  <option value="S">S</option>
+  <option value="M">M</option>
+  <option value="L">L</option>
+  </select>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-secondary" type="submit"><i class="fas fa-shopping-cart"></i>Add To Cart</button>
+            </div>
+        </div>
+    </div>
+</div>
