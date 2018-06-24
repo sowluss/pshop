@@ -33,7 +33,6 @@ hr {
 
 
 /*  MODAL  */
-
 .modal-header {
     background: #F0F8FF;
     border-bottom: 1px solid black;
@@ -60,4 +59,11 @@ hr {
 
 .modal-footer {
     background: #F0F8FF;
+}
+/* modal ends */
+
+
+/* space between the first and the second row */
+#second-row {
+    margin-top: 50px;
 }

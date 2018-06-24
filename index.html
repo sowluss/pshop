@@ -57,38 +57,6 @@
 
     <hr class="my-5">
 
-    <!--Carousel-->
-
-    <!--<div class="row">
-    <div class="col-md-6">
-
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    </ol>
-    <div class="carousel-inner" role="listbox">
-        <div class="carousel-item active">
-            <img class="d-block w-100" src="img/adult-beautiful-wide-sm.jpg" data-src="holder.js/900x400?theme=social" alt="First slide">
-        </div>
-        <div class="carousel-item">
-            <img class="d-block w-100" src="img/men-photo.jpg" data-src="holder.js/900x400?theme=industrial" alt="Second slide">
-        </div>
-    </div>
-   <a class="carousel-control prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-   
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-
-</div>
-</div>-->
-
 
     <h2 class="text-center">Featured Products</h2>
 
@@ -420,11 +388,11 @@
             </div>
         </div>
 
-        <hr class="my-5">
+        <!-- <hr class="my-5"> -->
 
         <!--SECOND ROW-->
 
-        <div class="container d-flex justify-content-between">
+        <div class="container d-flex justify-content-between" id="second-row">
             <div class="row">
                 <div class="col-md-3">
                     <div class="card" style="width: 18rem;">
@@ -441,6 +409,60 @@
                     </div>
                 </div>
 
+                <!-- PURSE MODAL STARTS HERE -->
+
+                <div class="modal fade details-5" id="details-5" tabindex="-1" role="dialog" aria-laballedby="details-5" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title text-center">Purse</h4>
+                                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                           <span aria-hidden="true">&times;</span>
+                           </button>
+                
+                            </div>
+                
+                
+                            <div class="modal-body">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="center-block">
+                                                <img src="img/stock/png/purse_2.png" alt="purse" class="details img-responsive">
+                                            </div>
+                                        </div>
+                
+                                        <div class="col-sm-6">
+                                            <h5 class="modal-details">Details</h5>
+                                            <p class="modal-text">Great looking, colorful and fashionable purse. Buy while they last.</p>
+                                            <p>Price: &#8364; 29.99</p>
+                                            <p>Brand: Woman Fashion</p>
+                
+                                            <form action="add_cart.php" method="post">
+                                                <div class="form-group">
+                                                    <div class="col-xs-3">
+                                                        <br>
+                                                        <label for="quantity" id="quantity-label">Quantity:</label>
+                                                        <input type="text" class="form-control" id="quantity" name="quantity">
+                                                    </div>
+                                                    <br>
+                                                    
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-secondary" type="submit"><i class="fas fa-shopping-cart"></i>Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PURSE modal ends -->
+
                 <div class="col-md-3">
                     <div class="card" style="width: 18rem;">
                         <img class="card-img-top" src="img/stock/png/head-band.png" alt="Card image cap">
@@ -456,6 +478,67 @@
                     </div>
                 </div>
 
+                <div class="modal fade details-6" id="details-6" tabindex="-1" role="dialog" aria-laballedby="details-6" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title text-center">Headband</h4>
+                                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                           <span aria-hidden="true">&times;</span>
+                           </button>
+                
+                            </div>
+                
+                            <!-- HEADBAND modal starts -->
+                
+                            <div class="modal-body">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="center-block">
+                                                <img src="img/stock/png/head-band.png" alt="headband" class="details img-responsive">
+                                            </div>
+                                        </div>
+                
+                                        <div class="col-sm-6">
+                                            <h5 class="modal-details">Details</h5>
+                                            <p class="modal-text">Very comfortable, perfect to wear when exercising. Buy while they last.</p>
+                                            <p>Price: &#8364; 10.00</p>
+                                            <p>Brand: Sports Wear</p>
+                
+                                            <form action="add_cart.php" method="post">
+                                                <div class="form-group">
+                                                    <div class="col-xs-3">
+                                                        <br>
+                                                        <label for="quantity" id="quantity-label">Quantity:</label>
+                                                        <input type="text" class="form-control" id="quantity" name="quantity">
+                                                    </div>
+                                                    <br>
+                                                    <div class="form-group">
+                                                        <label for="sizes">Size:</label>
+                                                        <select name="size" id="size" class="form-control">
+                  <option value=""></option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  </select>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-secondary" type="submit"><i class="fas fa-shopping-cart"></i>Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HEADBAND modal ends -->
+
+               
                 <div class="col-md-3">
                     <div class="card" style="width: 18rem;">
                         <img class="card-img-top" src="img/stock/png/football.png" alt="Card image cap">
@@ -470,6 +553,60 @@
                         </div>
                     </div>
                 </div>
+
+                 <!-- FOOTBALL modal starts -->
+
+                 <div class="modal fade details-7" id="details-7" tabindex="-1" role="dialog" aria-laballedby="details-7" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title text-center">Football</h4>
+                                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                           <span aria-hidden="true">&times;</span>
+                           </button>
+                
+                            </div>
+                
+                
+                            <div class="modal-body">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="center-block">
+                                                <img src="img/stock/png/football.png" alt="football " class="details img-responsive">
+                                            </div>
+                                        </div>
+                
+                                        <div class="col-sm-6">
+                                            <h5 class="modal-details">Details</h5>
+                                            <p class="modal-text">Have fun playing with this great quality ball. Buy while they last.</p>
+                                            <p>Price: &#8364; 15.99</p>
+                                            <p>Brand: Sports Wear</p>
+                
+                                            <form action="add_cart.php" method="post">
+                                                <div class="form-group">
+                                                    <div class="col-xs-3">
+                                                        <br>
+                                                        <label for="quantity" id="quantity-label">Quantity:</label>
+                                                        <input type="text" class="form-control" id="quantity" name="quantity">
+                                                    </div>
+                                                    <br>
+                                                    
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-secondary" type="submit"><i class="fas fa-shopping-cart"></i>Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FOOTBALL modal ends -->
 
                 <div class="col-md-3">
                     <div class="card" style="width: 18rem;">
@@ -486,6 +623,59 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- WATCH modal starts -->
+
+                <div class="modal fade details-8" id="details-8" tabindex="-1" role="dialog" aria-laballedby="details-8" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title text-center">Men's Watch</h4>
+                                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                           <span aria-hidden="true">&times;</span>
+                           </button>
+                            </div>
+                
+                            <div class="modal-body">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="center-block">
+                                                <img src="img/stock/png/watch2.png" alt="watch" class="details img-responsive">
+                                            </div>
+                                        </div>
+                
+                                        <div class="col-sm-6">
+                                            <h5 class="modal-details">Details</h5>
+                                            <p class="modal-text">Excellent quality, modern style. Buy while they last.</p>
+                                            <p>Price: &#8364; 39.99</p>
+                                            <p>Brand: Men & Fashion</p>
+                
+                                            <form action="add_cart.php" method="post">
+                                                <div class="form-group">
+                                                    <div class="col-xs-3">
+                                                        <br>
+                                                        <label for="quantity" id="quantity-label">Quantity:</label>
+                                                        <input type="text" class="form-control" id="quantity" name="quantity">
+                                                    </div>
+                                                    <br>
+                                                    
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-secondary" type="submit"><i class="fas fa-shopping-cart"></i>Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- WATCH modal ends -->
+
             </div>
         </div>
 
