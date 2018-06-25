@@ -3,8 +3,6 @@
     padding: 0;
 }
 
-
-
 /* Navigation */
 
 .navbar {
@@ -25,6 +23,10 @@ hr {
     margin: auto;
 }
 
+h2.title {
+    color: #7A8B8B;
+}
+
 #second-line {
     width: 45%;
     margin: auto;
@@ -37,17 +39,16 @@ hr {
   align-items: center;
 }
 
+.card-title {
+    color: #7A8B8B;
+}
+
 
 /*  MODAL  */
 .modal-header {
     background: #F0F8FF;
     border-bottom: 1px solid black;
 }
-
-#hoodie-header {
-    background: grey;
-}
-
 
 .modal-title {
     margin-left: 1rem;
@@ -95,3 +96,50 @@ ul.list-unstyled li a:hover {
 h5.mb-4 {
     color: #A2B5CD;
 }
+
+footer {
+    margin: 40px auto 0 auto;
+
+}
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 768px) {
+   .navbar {
+       width: 100%;
+   }
+
+   hr.my-5 {
+       display: none;
+   }
+
+   div.container {
+       margin-top: 40px;
+   }
+}
+
+
+@media (max-width: 1000px) {
+    .navbar {
+        width: 100%;
+    }
+ 
+    hr.my-5 {
+        display: none;
+    }
+ 
+    div.container {
+        margin-top: 40px;
+    }
+    div.first-row {
+        display: inline-block;
+    }
+    div.second-row {
+        display: inline-block;
+    }
+    .card {
+        margin-bottom: 20px;
+    }
+    
+ }
